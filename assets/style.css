@@ -1,0 +1,178 @@
+/* base css starts*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #7B7C80;
+}
+
+.noto-serif-heading-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.inter-body-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #8987A1;
+    transition: 0.3s;
+    display: inline-block;
+}
+a:hover, a.active {
+    color: #252432;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+/* repeated css starts */
+.site-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+}
+.d-flex-jcsb {
+    display: flex;
+    justify-content: space-between;
+}
+.d-grid {
+    display: grid;
+}
+.gap-20 {
+    gap: 20px;
+}
+.gap-30 {
+    gap: 30px;
+}
+.align-content-center {
+    align-items: center;
+}
+.text-yellow {
+    color: #E95A08;
+}
+.section-padding {
+    padding: 100px 0;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-title h2 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header starts*/
+header {
+    padding: 20px 0;
+}
+.logo-wrap .logo {
+    width: 60px;
+    height: 60px;
+}
+.logo-wrap .logo-heading {
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+
+
+
+
+.header-right img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hero-area starts*/
+.hero-area {
+    background: #013223;
+    background: linear-gradient(90deg,rgba(1, 50, 35, 1) 0%, rgba(0, 103, 71, 1) 50%, rgba(1, 50, 35, 1) 100%);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+.hero-content img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.hero-content h3 {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
