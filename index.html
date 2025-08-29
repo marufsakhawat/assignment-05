@@ -7,14 +7,14 @@
 
 	<!-- google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
 
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
-<body>
+<body class="roboto-body-font">
 
 	<header class="">
 		<div class="site-container d-flex-jcsb align-content-center">
@@ -26,8 +26,8 @@
 			</div>
 			<div class="header-right d-flex gap-20 align-content-center">
 				<div class="life d-flex align-content-center">
-					<span class="life-count">0</span>
-					<img src="assets/img/heart.png" alt="Heart">
+				<span id="lifeCounter">10</span>
+				<img src="assets/img/heart.png" alt="">
 				</div>
 				<div class="coin d-flex align-content-center">
 					<span class="coin-count">0</span>
@@ -50,31 +50,176 @@
 		</section>
 
 		<section class="service-cards-section">
-			<div class="site-container">
-				<div class="service-cards-wrap">
+			<div class="site-container d-flex gap-20">
+				<div class="service-cards d-flex gap-20">
+					
 					<div class="single-service">
 						<div class="service-icons d-flex-jcsb align-content-center">
-							<img src="assets/img/emergency.png" alt="Emergency">
-							<i class="fa fa-heart-o" aria-hidden="true"></i>
+							<div class="service-image-wrap">
+								<img src="assets/img/emergency.png" alt="Emergency">
+							</div>
+							<span class="life"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</div>
 						<h2 class="service-title">National Emergency Number</h2>
 						<h3 class="service-sub-title">National Emergency</h3>
 						<h1 class="number">999</h1>
 						<span class="numbe-tag">All</span>
-						<div class="call-copy-btn-wrap d-flex-jcsb align-content-center">
-							<a href=""></a>
+						<div class="call-copy-btn-wrap d-flex-jcsb gap-20 align-content-center">
+							<button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+							<button id="call-button"><i class="fa-solid fa-phone"></i> Call</button>
 						</div>
 					</div>
+
+					<div class="single-service">
+						<div class="service-icons d-flex-jcsb align-content-center">
+							<div class="service-image-wrap">
+								<img src="assets/img/emergency.png" alt="Emergency">
+							</div>
+							<span class="life"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</div>
+						<h2 class="service-title">National Emergency Number</h2>
+						<h3 class="service-sub-title">National Emergency</h3>
+						<h1 class="number">999</h1>
+						<span class="numbe-tag">All</span>
+						<div class="call-copy-btn-wrap d-flex-jcsb gap-20 align-content-center">
+							<button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+							<button class="call-btn" id="call-button"><i class="fa-solid fa-phone"></i> Call</button>
+						</div>
+					</div>
+
+					<div class="single-service">
+						<div class="service-icons d-flex-jcsb align-content-center">
+							<div class="service-image-wrap">
+								<img src="assets/img/emergency.png" alt="Emergency">
+							</div>
+							<span class="life"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</div>
+						<h2 class="service-title">National Emergency Number</h2>
+						<h3 class="service-sub-title">National Emergency</h3>
+						<h1 class="number">999</h1>
+						<span class="numbe-tag">All</span>
+						<div class="call-copy-btn-wrap d-flex-jcsb gap-20 align-content-center">
+							<button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+							<button class="call-btn" id="call-button"><i class="fa-solid fa-phone"></i> Call</button>
+						</div>
+					</div>
+
+				
+
+
+
+
+					
+
+
+
+
+
+
+
+					<!-- <div class="single-service">
+						<div class="service-icons d-flex-jcsb align-content-center">
+							<div class="service-image-wrap">
+								<img src="assets/img/emergency.png" alt="Emergency">
+							</div>
+							<span id="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</div>
+						<h2 class="service-title">National Emergency Number</h2>
+						<h3 class="service-sub-title">National Emergency</h3>
+						<h1 class="number">999</h1>
+						<span class="numbe-tag">All</span>
+						<div class="call-copy-btn-wrap d-flex-jcsb gap-20 align-content-center">
+							<a href="" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</a>
+							<a href="" class="call-btn"><i class="fa-solid fa-phone"></i> Call</a>
+						</div>
+					</div>
+
+					<div class="single-service">
+						<div class="service-icons d-flex-jcsb align-content-center">
+							<div class="service-image-wrap">
+								<img src="assets/img/emergency.png" alt="Emergency">
+							</div>
+							<span id="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</div>
+						<h2 class="service-title">National Emergency Number</h2>
+						<h3 class="service-sub-title">National Emergency</h3>
+						<h1 class="number">999</h1>
+						<span class="numbe-tag">All</span>
+						<div class="call-copy-btn-wrap d-flex-jcsb gap-20 align-content-center">
+							<a href="" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</a>
+							<a href="" class="call-btn"><i class="fa-solid fa-phone"></i> Call</a>
+						</div>
+					</div>
+
+					<div class="single-service">
+						<div class="service-icons d-flex-jcsb align-content-center">
+							<div class="service-image-wrap">
+								<img src="assets/img/emergency.png" alt="Emergency">
+							</div>
+							<span id="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</div>
+						<h2 class="service-title">National Emergency Number</h2>
+						<h3 class="service-sub-title">National Emergency</h3>
+						<h1 class="number">999</h1>
+						<span class="numbe-tag">All</span>
+						<div class="call-copy-btn-wrap d-flex-jcsb gap-20 align-content-center">
+							<a href="" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</a>
+							<a href="" class="call-btn"><i class="fa-solid fa-phone"></i> Call</a>
+						</div>
+					</div>
+					
+					<div class="single-service">
+						<div class="service-icons d-flex-jcsb align-content-center">
+							<div class="service-image-wrap">
+								<img src="assets/img/emergency.png" alt="Emergency">
+							</div>
+							<span id="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</div>
+						<h2 class="service-title">National Emergency Number</h2>
+						<h3 class="service-sub-title">National Emergency</h3>
+						<h1 class="number">999</h1>
+						<span class="numbe-tag">All</span>
+						<div class="call-copy-btn-wrap d-flex-jcsb gap-20 align-content-center">
+							<a href="" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</a>
+							<a href="" class="call-btn"><i class="fa-solid fa-phone"></i> Call</a>
+						</div>
+					</div>
+
+					<div class="single-service">
+						<div class="service-icons d-flex-jcsb align-content-center">
+							<div class="service-image-wrap">
+								<img src="assets/img/emergency.png" alt="Emergency">
+							</div>
+							<span id="heart"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</div>
+						<h2 class="service-title">National Emergency Number</h2>
+						<h3 class="service-sub-title">National Emergency</h3>
+						<h1 class="number">999</h1>
+						<span class="numbe-tag">All</span>
+						<div class="call-copy-btn-wrap d-flex-jcsb gap-20 align-content-center">
+							<a href="" class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</a>
+							<a href="" class="call-btn"><i class="fa-solid fa-phone"></i> Call</a>
+						</div>
+					</div>
+ -->
 				</div>
 				<div class="call-history-wrap">
-					
+					<h2>Call history section</h2>
 				</div>
 			</div>
 		</section>
 	</main>
 
+
+
+
+
+
+
 	<!-- script for font awesome -->
     <script src="https://kit.fontawesome.com/a17624275d.js" crossorigin="anonymous"></script>
-	<source src="assets/scripts.js" type="">
+	
+	<!-- <source src="assets/scripts.js"> -->
+	<script src="assets/scripts.js"></script>
 </body>
 </html>
