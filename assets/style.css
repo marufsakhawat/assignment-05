@@ -1,249 +1,30 @@
-/* base css starts*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.font-madu-bold {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.roboto-body-font {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
+.font-madu-semibold {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.font-madu-regular {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #7B7C80;
-}
-
-
-
-
-
-
-ul {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: #8987A1;
-    transition: 0.3s;
-    display: inline-block;
-}
-a:hover, a.active {
-    color: #252432;
-}
-h1, h2, h3, h4, h5, h6 {
-    color: #000;
-    /*line-height: 1.5;*/
-}
-
-
-
-
-
-
-/* repeated css starts */
-.site-container {
-    width: calc(100% - 50px);
-    margin: 0 auto;
-}
-.d-flex {
-    display: flex;
-}
-.d-flex-jcsb {
-    display: flex;
-    justify-content: space-between;
-}
-.d-grid {
-    display: grid;
-}
-.gap-20 {
-    gap: 20px;
-}
-.gap-30 {
-    gap: 30px;
-}
-.align-content-center {
-    align-items: center;
-}
-.text-yellow {
-    color: #E95A08;
-}
-.section-padding {
-    padding: 100px 0;
-}
-.section-title {
-    text-align: center;
-    margin-bottom: 60px;
-}
-.section-title h2 {
-    font-size: 50px;
-    font-weight: 900;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*header starts*/
-header {
-    padding: 20px 0;
-}
-.logo-wrap .logo {
-    width: 60px;
-    height: 60px;
-}
-.logo-wrap .logo-heading {
-    margin-bottom: 0;
-    margin-left: 15px;
-}
-
-
-
-
-
-.header-right img {
-    width: 35px;
-    height: 35px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*hero-area starts*/
-.hero-area {
-    background: #013223;
-    background: linear-gradient(90deg,rgba(1, 50, 35, 1) 0%, rgba(0, 103, 71, 1) 50%, rgba(1, 50, 35, 1) 100%);
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-.hero-content img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-.hero-content h3 {
-    color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*service-section starts*/
-.service-cards-section {
-    padding: 60px 0;
-    background-color: #F4FFF7;
-}
-.service-cards {
-    flex-basis: 75%;
-}
-.service-cards.d-flex {
-    flex-wrap: wrap;
-}
-.service-cards.d-flex > div {
-    width: calc(33.33% - 20px);
-}
-
-
-
-.single-service {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    padding: 30px 25px;
-    background-color: #fff;
-    border-radius: 15px;
-}
-.service-image-wrap {
-    border-radius: 16px;
-    padding: 10px 10px;
-    background-color: #FFE3E2;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-}
-.service-icons img {
-    width: 32px;
-    height: 32px;
-}
-span#heart {
-    padding: 10px;
-    font-size: 30px;
-    display: inline-block;
-    cursor: pointer;
-}
-h2.service-title {
-    text-transform: capitalize;
-    font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-h3.service-sub-title {
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: #5c5c5c;
-    margin-bottom: 15px;
-}
-span.numbe-tag {
-    color: #5c5c5c;
-    padding: 8px 15px;
-    background-color: #F2F2F2;
-    border-radius: 8px;
-    margin-bottom: 25px;
-    display: inline-block;
-}
-.call-copy-btn-wrap button {
-    background-color: #00A64A;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 16px;
-    width: 100%;
-    text-align: center;
-    padding: 5px 15px;
-    border: 0;
-}
-.call-copy-btn-wrap button.copy-btn {
-    background-color: #fff;
-    color: #5c5c5c;
-    border: 1px solid #5c5c5c;
-}
