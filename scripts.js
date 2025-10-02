@@ -60,7 +60,7 @@ callBtns.forEach(btn => {
         const div = document.createElement("div");
         div.style.marginTop = "12px";
         div.style.padding = "10px";
-        div.style.background = "#f1f1f1";
+        div.style.background = "#f6f6f6";
         div.style.borderRadius = "10px";
 
         div.innerHTML = `

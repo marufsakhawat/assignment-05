@@ -15,19 +15,49 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- DaisyUI CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <!-- Font-Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/style.css">
+
+    <style>
+    	.font-madu-bold {
+		    font-family: "Hind Madurai", sans-serif;
+		    font-weight: 700;
+		    font-style: normal;
+		}
+
+		.font-madu-semibold {
+		    font-family: "Hind Madurai", sans-serif;
+		    font-weight: 600;
+		    font-style: normal;
+		}
+
+		.font-madu-regular {
+		    font-family: "Hind Madurai", sans-serif;
+		    font-weight: 400;
+		    font-style: normal;
+		}
+
+		.font-roboto-regular {
+		    font-family: "Roboto", sans-serif;
+		    font-weight: 400;
+		    font-style: normal;
+		}
+
+		.inter-regular {
+		  font-family: "Inter", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.button-wrap button {
+		    width: 50%;
+		}
+    </style>
 
 </head>
 
 <body class="bg-[#F5FFF6]">
 	
 	<nav>
-		<div class="container mx-auto navbar justify-between">
+		<div class="container mx-auto pt-10 pb-10 navbar justify-between">
             <div class="md:flex gap-3">
                 <img class="h-[60px]" src="./assets/logo.png" alt="">
                 <h1 class="text-[#006747] text-2xl font-bold">Emergency <br> Service</h1>
@@ -50,7 +80,7 @@
 	</nav><!-- nav bar end -->
 
     
-   	<div class="banner-area p-5 md:flex flex-col md:gap-3 justify-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white">
+   	<div class="banner-area p-5 pt-10 pb-10 md:flex flex-col md:gap-3 justify-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white">
         <img class="size-16 md:size-24" src="./assets/logo.png" alt="">
         <h1 class="font-madu-bold text-[25px] md:text-4xl">Emergency Service Directory</h1>
         <p class="font-madurai-semibold md:text-[20px]">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
@@ -58,9 +88,10 @@
 	
 	<div class="container mx-auto">
 	    
-	    <div class=" mt-10 md:flex">
-	        <div class="cards-wrap grid mb-5 md:grid-cols-3 gap-4 flex-1">
-				<div class="card bg-white p-10 h-[330px] w-[100%] rounded-md shadow-md">
+	    <div class=" mt-10 lg:flex">
+	        <div class="cards-wrap grid mb-5 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 gap-4 flex-1">
+				
+				<div class="card bg-white p-8 w-[100%] rounded-md shadow-md">
 					<div class="flex justify-between items-center">
 						<div class="p-3 size-15 rounded-xl bg-[#FFE3E2]">
 							<img class="size-9" src="./assets/emergency.png" alt="">
@@ -77,12 +108,13 @@
 					</div>
 					<div class="mt-3 flex justify-between items-center gap-2">
 						<button class="copy-btn btn w-[50%]"><i class="fa-regular fa-copy"></i>Copy</button>
-						<button class="call-btn btn btn-success !bg-[#00A63E] w-[50%] text-white"><span class="text-white"><i class="fa-solid fa-phone"></i> Call</span></button>
+						<button class="call-btn btn btn-success !bg-[#00A63E] w-[50%] text-white"><span class="text-white"><i
+						class="fa-solid fa-phone"></i> Call</span></button>
 					</div>
 				</div>
 				<!-- card end -->
 
-				<div class="card bg-white p-10 h-[330px] w-[100%] rounded-md shadow-md">
+				<div class="card bg-white p-8 w-[100%] rounded-md shadow-md">
 					<div class="flex justify-between items-center">
 						<div class="p-3 size-15 rounded-xl bg-[#FFE3E2]">
 							<img class="size-9" src="./assets/police.png" alt="">
@@ -105,7 +137,7 @@
 				</div>
 				<!-- card end -->
 
-				<div class="card bg-white p-10 h-[330px] w-[100%] rounded-md shadow-md">
+				<div class="card bg-white p-8 w-[100%] rounded-md shadow-md">
 					<div class="flex justify-between items-center">
 						<div class="p-3 size-15 rounded-xl bg-[#FFE3E2]">
 							<img class="size-9" src="./assets/fire-service.png" alt="">
@@ -128,7 +160,7 @@
 				</div>
 				<!-- card end -->
 
-				<div class="card bg-white p-10 h-[330px] w-[100%] rounded-md shadow-md">
+				<div class="card bg-white p-8 w-[100%] rounded-md shadow-md">
 					<div class="flex justify-between items-center">
 						<div class="p-3 size-15 rounded-xl bg-[#FFE3E2]">
 							<img class="size-9" src="./assets/emergency.png" alt="">
@@ -151,7 +183,7 @@
 				</div>
 				<!-- card end -->
 
-				<div class="card bg-white p-10 h-[330px] w-[100%] rounded-md shadow-md">
+				<div class="card bg-white p-8 w-[100%] rounded-md shadow-md">
 					<div class="flex justify-between items-center">
 						<div class="p-3 size-15 rounded-xl bg-[#FFE3E2]">
 							<img class="size-9" src="./assets/emergency.png" alt="">
@@ -174,7 +206,7 @@
 				</div>
 				<!-- card end -->
 
-				<div class="card bg-white p-10 h-[330px] w-[100%] rounded-md shadow-md">
+				<div class="card bg-white p-8 w-[100%] rounded-md shadow-md">
 					<div class="flex justify-between items-center">
 						<div class="p-3 size-15 rounded-xl bg-[#FFE3E2]">
 							<img class="size-9" src="./assets/emergency.png" alt="">
@@ -197,7 +229,7 @@
 				</div>
 				<!-- card end -->
 
-				<div class="card bg-white p-10 h-[330px] w-[100%] rounded-md shadow-md">
+				<div class="card bg-white p-8 w-[100%] rounded-md shadow-md">
 					<div class="flex justify-between items-center">
 						<div class="p-3 size-15 rounded-xl bg-[#FFE3E2]">
 							<img class="size-9" src="./assets/emergency.png" alt="">
@@ -221,7 +253,7 @@
 				</div>
 				<!-- card end -->
 
-				<div class="card bg-white p-10 h-[330px] w-[100%] rounded-md shadow-md">
+				<div class="card bg-white p-8 w-[100%] rounded-md shadow-md">
 					<div class="flex justify-between items-center">
 						<div class="p-3 size-15 rounded-xl bg-[#FFE3E2]">
 							<img class="size-9" src="./assets/brac.png" alt="">
@@ -244,7 +276,7 @@
 				</div>
 				<!-- card end -->
 
-				<div class="card bg-white p-10 h-[330px] w-[100%] rounded-md shadow-md">
+				<div class="card bg-white p-8 w-[100%] rounded-md shadow-md">
 					<div class="flex justify-between items-center">
 						<div class="p-3 size-15 rounded-xl bg-[#FFE3E2]">
 							<img class="size-9" src="./assets/Bangladesh-Railway.png" alt="">
@@ -266,10 +298,11 @@
 					</div>
 				</div>
 				<!-- card end -->
+
 	        </div> <!-- cards-wrap end -->
 	        
 	        <div>
-	            <div class="call-history-area w-[350px] h-full  md:w-[325px] md:ml-4 bg-white rounded-xl shadow-md p-4">
+	            <div class="call-history-area lg:w-[325px] lg:ml-4 bg-white rounded-xl shadow-md p-4">
 	                <div class="flex justify-between items-center">
 	                    <p class="text-m"><i class="fa-solid fa-clock text-gray-500"></i> Call History</p>
 	                    <h1 id="history-clear"
@@ -285,8 +318,10 @@
 	    </div>
 	</div>
 
+	<!-- script for font awesome -->
+    <script src="https://kit.fontawesome.com/a17624275d.js" crossorigin="anonymous"></script>
 	<!-- main js here -->
-    <script src="assets/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
