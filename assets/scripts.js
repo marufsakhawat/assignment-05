@@ -33,7 +33,7 @@ const transactionContainer = document.getElementById("container");
 
 callBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        const card = btn.closest(".card"); // safer than parentNode.parentNode
+        const card = btn.closest(".card");
         const serviceName = card.querySelector(".service-name").innerText;
         const serviceNumber = card.querySelector(".service-number").innerText;
 
@@ -56,7 +56,7 @@ callBtns.forEach(btn => {
 
         transactionData.push(data);
 
-        // Add transaction history block
+        // Add history block
         const div = document.createElement("div");
         div.style.marginTop = "12px";
         div.style.padding = "10px";
@@ -66,13 +66,11 @@ callBtns.forEach(btn => {
         div.innerHTML = `
             <b>${data.name}</b><br>
             ${data.num}<br>
-            <small>${data.time}</small>
-        `;
+            <small>${data.time}</small>`;
 
         transactionContainer.appendChild(div);
     });
 });
-
 
 // Clear call history function
 document.getElementById("history-clear").onclick = function () {
